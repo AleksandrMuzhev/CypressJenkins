@@ -1,0 +1,19 @@
+{
+  "name": "7.7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:booking": "npx cypress run --record --key 9064d98b-7e08-4287-ab13-957b119f351b --group booking --spec \"cypress/e2e/booking.cy.js\" --ci-build-id 17",
+    "test:cinema": "npx cypress run --record --key 9064d98b-7e08-4287-ab13-957b119f351b --group cinema --spec \"cypress/e2e/cinema.cy.js\" --ci-build-id 17",
+    "test:login": "npx cypress run --record --key 9064d98b-7e08-4287-ab13-957b119f351b --group login --spec \"cypress/e2e/login.cy.js\" --ci-build-id 17",
+    "test:parallel": "npm run test:booking & npm run test:cinema & npm run test:login",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  }
+}
