@@ -1,4 +1,4 @@
-import auth from "../fixtures/auth";
+import auth from "../../fixtures/auth";
 
 describe("booking tickets on movie", () => {
   it("should book a movie in an available hall", () => {

@@ -11,6 +11,7 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+
 Cypress.Commands.add("login", (email, password) => {
   if (email) {
     cy.fixture("auth").then((auth) => {
